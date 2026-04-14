@@ -1,15 +1,766 @@
 roles user/admin
 
-Themes for quizz
-1.Games
+# Quiz — 5 Themes, 75 Questions
 
-2.Ai
+---
 
-3.Music
+## 🎮 Theme 1: Games
 
-4.Politics
+**Q1. Which company developed Minecraft?**
+- A) Valve
+- B) Mojang
+- C) Blizzard
+- D) Epic Games
 
-5.It
+✅ **Answer: B) Mojang**
+
+---
+
+**Q2. What year was Pac-Man released?**
+- A) 1978
+- B) 1982
+- C) 1980
+- D) 1985
+
+✅ **Answer: C) 1980**
+
+---
+
+**Q3. What is the name of the main villain in The Legend of Zelda?**
+- A) Bowser
+- B) Ridley
+- C) Grunty
+- D) Ganon
+
+✅ **Answer: D) Ganon**
+
+---
+
+**Q4. Which game features Master Chief?**
+- A) Doom
+- B) Gears of War
+- C) Halo
+- D) Call of Duty
+
+✅ **Answer: C) Halo**
+
+---
+
+**Q5. What is the best-selling video game of all time?**
+- A) Tetris
+- B) GTA V
+- C) Wii Sports
+- D) Minecraft
+
+✅ **Answer: D) Minecraft**
+
+---
+
+**Q6. What is the currency in Animal Crossing?**
+- A) Gold Coins
+- B) Rupees
+- C) Bells
+- D) Nook Points
+
+✅ **Answer: C) Bells**
+
+---
+
+**Q7. Which company makes the FIFA video game series?**
+- A) Ubisoft
+- B) 2K Games
+- C) Activision
+- D) EA Sports
+
+✅ **Answer: D) EA Sports**
+
+---
+
+**Q8. What is the objective of Among Us?**
+- A) Build a base
+- B) Race to finish
+- C) Find the impostor
+- D) Defeat a boss
+
+✅ **Answer: C) Find the impostor**
+
+---
+
+**Q9. Which game series popularized the Konami Code?**
+- A) Sonic
+- B) Mega Man
+- C) Castlevania
+- D) Contra
+
+✅ **Answer: D) Contra**
+
+---
+
+**Q10. What was the first commercially successful video game?**
+- A) Asteroids
+- B) Space Invaders
+- C) Breakout
+- D) Pong
+
+✅ **Answer: D) Pong**
+
+---
+
+**Q11. How many players start in a standard Fortnite Battle Royale match?**
+- A) 50
+- B) 75
+- C) 128
+- D) 100
+
+✅ **Answer: D) 100**
+
+---
+
+**Q12. Which game features the character Kratos?**
+- A) Dark Souls
+- B) Devil May Cry
+- C) God of War
+- D) Bayonetta
+
+✅ **Answer: C) God of War**
+
+---
+
+**Q13. In Super Mario Bros, which world has the first castle?**
+- A) World 1-3
+- B) World 2-1
+- C) World 1-4
+- D) World 2-4
+
+✅ **Answer: C) World 1-4**
+
+---
+
+**Q14. Which console did Sony release in Japan in 1994?**
+- A) Game Boy
+- B) PlayStation 2
+- C) Sega Saturn
+- D) PlayStation
+
+✅ **Answer: D) PlayStation**
+
+---
+
+**Q15. What type of game is Dark Souls known for?**
+- A) Easy difficulty
+- B) Open-world racing
+- C) Challenging difficulty
+- D) Turn-based strategy
+
+✅ **Answer: C) Challenging difficulty**
+
+---
+
+## 🤖 Theme 2: Artificial Intelligence
+
+**Q1. What does AI stand for?**
+- A) Automated Interface
+- B) Advanced Integration
+- C) Algorithmic Input
+- D) Artificial Intelligence
+
+✅ **Answer: D) Artificial Intelligence**
+
+---
+
+**Q2. Which company created ChatGPT?**
+- A) Google
+- B) Microsoft
+- C) Meta
+- D) OpenAI
+
+✅ **Answer: D) OpenAI**
+
+---
+
+**Q3. What is a neural network modeled after?**
+- A) DNA strands
+- B) Ant colonies
+- C) The human brain
+- D) Computer circuits
+
+✅ **Answer: C) The human brain**
+
+---
+
+**Q4. What does ML stand for in AI?**
+- A) Meta Logic
+- B) Multi-Layer
+- C) Model Language
+- D) Machine Learning
+
+✅ **Answer: D) Machine Learning**
+
+---
+
+**Q5. Which test determines if a machine can exhibit intelligent behavior?**
+- A) Shannon Test
+- B) Lovelace Test
+- C) Watson Test
+- D) Turing Test
+
+✅ **Answer: D) Turing Test**
+
+---
+
+**Q6. What is AI that can perform any intellectual task a human can called?**
+- A) Superintelligence
+- B) Deep AI
+- C) Narrow AI
+- D) General AI
+
+✅ **Answer: D) General AI**
+
+---
+
+**Q7. Which is a popular deep learning framework?**
+- A) MySQL
+- B) Excel
+- C) TensorFlow
+- D) Photoshop
+
+✅ **Answer: C) TensorFlow**
+
+---
+
+**Q8. What is overfitting in machine learning?**
+- A) Model runs too fast
+- B) Model too simple
+- C) Model uses too much power
+- D) Model memorizes training data
+
+✅ **Answer: D) Model memorizes training data**
+
+---
+
+**Q9. What does GPT stand for?**
+- A) Global Predictive Technology
+- B) Graphical Pattern Training
+- C) General Processing Tool
+- D) Generative Pre-trained Transformer
+
+✅ **Answer: D) Generative Pre-trained Transformer**
+
+---
+
+**Q10. Which company created the AI model Gemini?**
+- A) Meta
+- B) Amazon
+- C) Apple
+- D) Google
+
+✅ **Answer: D) Google**
+
+---
+
+**Q11. What is natural language processing?**
+- A) Translating binary code
+- B) Coding in plain English
+- C) Teaching robots to walk
+- D) Making AI understand human language
+
+✅ **Answer: D) Making AI understand human language**
+
+---
+
+**Q12. What year did IBM's Deep Blue defeat chess champion Kasparov?**
+- A) 1993
+- B) 2001
+- C) 2005
+- D) 1997
+
+✅ **Answer: D) 1997**
+
+---
+
+**Q13. What is reinforcement learning?**
+- A) Learning from images
+- B) Learning from labeled data
+- C) Supervised learning
+- D) Learning from rewards and penalties
+
+✅ **Answer: D) Learning from rewards and penalties**
+
+---
+
+**Q14. Which AI technique generates realistic fake images?**
+- A) RNN
+- B) SVM
+- C) CNN
+- D) GAN
+
+✅ **Answer: D) GAN**
+
+---
+
+**Q15. Which company created the AI assistant Claude?**
+- A) OpenAI
+- B) Meta
+- C) Google
+- D) Anthropic
+
+✅ **Answer: D) Anthropic**
+
+---
+
+## 🎵 Theme 3: Music
+
+**Q1. How many strings does a standard guitar have?**
+- A) 4
+- B) 5
+- C) 7
+- D) 6
+
+✅ **Answer: D) 6**
+
+---
+
+**Q2. Who is known as the King of Pop?**
+- A) Prince
+- B) Elvis Presley
+- C) David Bowie
+- D) Michael Jackson
+
+✅ **Answer: D) Michael Jackson**
+
+---
+
+**Q3. What does the tempo marking Allegro mean?**
+- A) Very slow
+- B) Very fast
+- C) Slow
+- D) Fast
+
+✅ **Answer: D) Fast**
+
+---
+
+**Q4. How many keys does a standard piano have?**
+- A) 76
+- B) 96
+- C) 82
+- D) 88
+
+✅ **Answer: D) 88**
+
+---
+
+**Q5. Which band released Dark Side of the Moon?**
+- A) Led Zeppelin
+- B) The Rolling Stones
+- C) The Beatles
+- D) Pink Floyd
+
+✅ **Answer: D) Pink Floyd**
+
+---
+
+**Q6. What does BPM stand for in music?**
+- A) Bass Power Mode
+- B) Beat Per Measure
+- C) Beats Per Minute
+- D) Band Performance Metric
+
+✅ **Answer: C) Beats Per Minute**
+
+---
+
+**Q7. Which instrument has black and white keys?**
+- A) Harp
+- B) Xylophone
+- C) Accordion
+- D) Piano
+
+✅ **Answer: D) Piano**
+
+---
+
+**Q8. What is the highest female singing voice called?**
+- A) Alto
+- B) Mezzo-soprano
+- C) Tenor
+- D) Soprano
+
+✅ **Answer: D) Soprano**
+
+---
+
+**Q9. Which music genre originated in Jamaica?**
+- A) Salsa
+- B) Reggae
+- C) Samba
+- D) Calypso
+
+✅ **Answer: B) Reggae**
+
+---
+
+**Q10. How many beats are in a 4/4 time signature per measure?**
+- A) 2
+- B) 3
+- C) 6
+- D) 4
+
+✅ **Answer: D) 4**
+
+---
+
+**Q11. Who composed the famous Symphony No. 9?**
+- A) Mozart
+- B) Bach
+- C) Chopin
+- D) Beethoven
+
+✅ **Answer: D) Beethoven**
+
+---
+
+**Q12. What is the name of the do-re-mi musical scale system?**
+- A) Harmonics
+- B) Solfège
+- C) Tonality
+- D) Cadence
+
+✅ **Answer: B) Solfège**
+
+---
+
+**Q13. Which artist is known for the album Thriller?**
+- A) Prince
+- B) Madonna
+- C) Michael Jackson
+- D) Whitney Houston
+
+✅ **Answer: C) Michael Jackson**
+
+---
+
+**Q14. What family of instruments does a violin belong to?**
+- A) Woodwind
+- B) Percussion
+- C) Brass
+- D) String
+
+✅ **Answer: D) String**
+
+---
+
+**Q15. What does a conductor use to lead an orchestra?**
+- A) Drumstick
+- B) Baton
+- C) Bow
+- D) Wand
+
+✅ **Answer: B) Baton**
+
+---
+
+## 🏛️ Theme 4: Politics
+
+**Q1. What is the term for a government ruled by the people?**
+- A) Monarchy
+- B) Oligarchy
+- C) Theocracy
+- D) Democracy
+
+✅ **Answer: D) Democracy**
+
+---
+
+**Q2. How many permanent members does the UN Security Council have?**
+- A) 3
+- B) 7
+- C) 10
+- D) 5
+
+✅ **Answer: D) 5**
+
+---
+
+**Q3. What document is considered the foundation of U.S. democracy?**
+- A) The Magna Carta
+- B) Declaration of Rights
+- C) The Bill of Rights
+- D) The Constitution
+
+✅ **Answer: D) The Constitution**
+
+---
+
+**Q4. Which body is the legislative branch of the European Union?**
+- A) EU Council
+- B) EU Commission
+- C) EU Court
+- D) European Parliament
+
+✅ **Answer: D) European Parliament**
+
+---
+
+**Q5. What is a veto?**
+- A) A type of vote
+- B) A government budget
+- C) A right to block a decision
+- D) A law amendment
+
+✅ **Answer: C) A right to block a decision**
+
+---
+
+**Q6. What does NATO stand for?**
+- A) National Army Treaty Order
+- B) Nordic Alliance Treaty Operations
+- C) North American Treaty Organization
+- D) North Atlantic Treaty Organization
+
+✅ **Answer: D) North Atlantic Treaty Organization**
+
+---
+
+**Q7. Which country has the world's largest parliament by number of seats?**
+- A) India
+- B) USA
+- C) Russia
+- D) China
+
+✅ **Answer: D) China**
+
+---
+
+**Q8. What political system has a king or queen as head of state?**
+- A) Republic
+- B) Theocracy
+- C) Federation
+- D) Monarchy
+
+✅ **Answer: D) Monarchy**
+
+---
+
+**Q9. What is the process of removing a president from office called?**
+- A) Referendum
+- B) Dissolution
+- C) Impeachment
+- D) Censure
+
+✅ **Answer: C) Impeachment**
+
+---
+
+**Q10. Which country was the first to give women the right to vote?**
+- A) Sweden
+- B) USA
+- C) UK
+- D) New Zealand
+
+✅ **Answer: D) New Zealand**
+
+---
+
+**Q11. Where is the UN headquarters located?**
+- A) Washington D.C.
+- B) Geneva
+- C) London
+- D) New York City
+
+✅ **Answer: D) New York City**
+
+---
+
+**Q12. How long is a U.S. presidential term?**
+- A) 3 years
+- B) 6 years
+- C) 8 years
+- D) 4 years
+
+✅ **Answer: D) 4 years**
+
+---
+
+**Q13. What is geopolitics?**
+- A) Geography education
+- B) Map-making science
+- C) Study of influence of geography on politics
+- D) Political polling
+
+✅ **Answer: C) Study of influence of geography on politics**
+
+---
+
+**Q14. What does GDP stand for?**
+- A) Government Debt Policy
+- B) Global Development Plan
+- C) Gross Domestic Product
+- D) General Distribution of Power
+
+✅ **Answer: C) Gross Domestic Product**
+
+---
+
+**Q15. Which political ideology favors free markets and limited government?**
+- A) Socialism
+- B) Communism
+- C) Liberalism
+- D) Conservatism/Libertarianism
+
+✅ **Answer: D) Conservatism/Libertarianism**
+
+---
+
+## 💻 Theme 5: I.T.
+
+**Q1. What does CPU stand for?**
+- A) Central Processing Unit
+- B) Computer Power Unit
+- C) Core Program Utility
+- D) Central Program Upload
+
+✅ **Answer: A) Central Processing Unit**
+
+---
+
+**Q2. What does HTTP stand for?**
+- A) HyperText Transfer Protocol
+- B) High Traffic Transmission Process
+- C) Hybrid Text Transfer Program
+- D) Host Terminal Transfer Protocol
+
+✅ **Answer: A) HyperText Transfer Protocol**
+
+---
+
+**Q3. Which programming language is known as the language of the web?**
+- A) Python
+- B) Java
+- C) C++
+- D) JavaScript
+
+✅ **Answer: D) JavaScript**
+
+---
+
+**Q4. What is RAM used for?**
+- A) Long-term storage
+- B) Processing graphics
+- C) Temporary data storage
+- D) Internet connection
+
+✅ **Answer: C) Temporary data storage**
+
+---
+
+**Q5. What does open source mean?**
+- A) Free to use with no rules
+- B) Publicly available source code
+- C) Software without a license
+- D) Cloud-based software
+
+✅ **Answer: B) Publicly available source code**
+
+---
+
+**Q6. Which company developed the Windows operating system?**
+- A) Apple
+- B) IBM
+- C) Google
+- D) Microsoft
+
+✅ **Answer: D) Microsoft**
+
+---
+
+**Q7. What is a firewall?**
+- A) A type of virus
+- B) A network security system
+- C) A type of cable
+- D) A data backup system
+
+✅ **Answer: B) A network security system**
+
+---
+
+**Q8. What does URL stand for?**
+- A) Universal Resource Locator
+- B) Uniform Resource Locator
+- C) User Registered Link
+- D) United Remote Location
+
+✅ **Answer: B) Uniform Resource Locator**
+
+---
+
+**Q9. What is the binary number system based on?**
+- A) 8 digits
+- B) 16 digits
+- C) 10 digits
+- D) 2 digits
+
+✅ **Answer: D) 2 digits**
+
+---
+
+**Q10. What does SSD stand for?**
+- A) Software System Design
+- B) Super Speed Drive
+- C) Solid State Drive
+- D) Serial Storage Device
+
+✅ **Answer: C) Solid State Drive**
+
+---
+
+**Q11. Which language is primarily used for data science and AI?**
+- A) Ruby
+- B) Swift
+- C) Python
+- D) PHP
+
+✅ **Answer: C) Python**
+
+---
+
+**Q12. What is cloud computing?**
+- A) Weather prediction software
+- B) Storing and accessing data over the internet
+- C) A type of network cable
+- D) A cooling system for servers
+
+✅ **Answer: B) Storing and accessing data over the internet**
+
+---
+
+**Q13. What is an IP address?**
+- A) A type of processor
+- B) A software license number
+- C) A unique identifier for a device on a network
+- D) A programming interface
+
+✅ **Answer: C) A unique identifier for a device on a network**
+
+---
+
+**Q14. What does VPN stand for?**
+- A) Virtual Private Network
+- B) Visual Processing Node
+- C) Verified Public Network
+- D) Variable Packet Navigator
+
+✅ **Answer: A) Virtual Private Network**
+
+---
+
+**Q15. What is the function of an operating system?**
+- A) Design websites
+- B) Manage hardware and software resources
+- C) Write code
+- D) Connect to the internet
+
+✅ **Answer: B) Manage hardware and software resources**
 
 
 
