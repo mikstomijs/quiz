@@ -1,6 +1,15 @@
 roles user/admin
 
+Themes for quizz
+1.Games
 
+2.Ai
+
+3.Music
+
+4.Politics
+
+5.It
 
 
 
