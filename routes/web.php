@@ -1,6 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\QuizController;
+use App\Models\User;
+use App\Models\Quiz;
+
+
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,13 +15,35 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $quizzes = Quiz::all();
+    return view('dashboard', compact('quizzes'));
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/admin', function () {
+    abort_unless(auth()->check() && auth()->user()->isAdmin(), 403);
+
+    $quizzes = Quiz::with('questions')->get();
+    return view('admin', compact('quizzes'));
+});
+
+
+Route::get('/history', [QuizController::class, 'history'])->middleware('auth');
+
+Route::post('/quiz/submit', [QuizController::class, 'submit'])->middleware('auth');
+
+
+
+
+
+
+Route::post('/admin', [AdminController::class, 'store']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/quiz/{quiz}', [QuizController::class, 'quiz']);
 
 require __DIR__.'/auth.php';

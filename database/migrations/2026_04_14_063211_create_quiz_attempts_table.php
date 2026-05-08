@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('user_id')->references('id')->on('users');
             $table->integer('quiz_id')->references('id')->on('quizzes');
             $table->integer('score');
+            $table->timestamps();
         });
     }
 

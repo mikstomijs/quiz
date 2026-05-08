@@ -1,7 +1,14 @@
 roles user/admin
 
 
+pievienot atbildes jautajumiem
 
+input is correct ?
+input is correct ?
+input is correct ?
+input is correct ?
+
+ielikt visu array, ielikt datubaze
 
 
 

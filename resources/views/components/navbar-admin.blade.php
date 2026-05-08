@@ -1,8 +1,7 @@
 <header>
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/quizzes">Quizzes</a></li>
+        <li><a href="/dashboard">Quizzes</a></li>
         <li>    @auth
                 <form action="/logout" method="POST">
                     @csrf
