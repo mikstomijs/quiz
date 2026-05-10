@@ -15,7 +15,10 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    $quizzes = Quiz::all();
+    $quizzes = Quiz::with(['attempts' => function($query) {
+    $query->where('user_id', auth()->id());
+}])->get();
+
     return view('dashboard', compact('quizzes'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 

@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-admin>
 <x-slot:title>Admin</x-slot:title>
 <div>
 <form method="POST" action="/admin">
@@ -57,4 +57,4 @@
 
 
 
-</x-layout>
+</x-layout-admin>
