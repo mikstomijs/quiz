@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Quantum Quiz Futuristic Theme */
+
+@layer base {
+  :root {
+    --color-cyan: #00e5ff;
+    --color-purple: #c850f0;
+    --color-pink: #ff2d78;
+    --color-orange: #ff9900;
+    --color-teal: #00c9a7;
+    --color-text-primary: #ffffff;
+    --color-text-muted: #8892a4;
+    --color-bg-dark: #0a0a1a;
+    --color-bg-card: #0d1117;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-[#0a0a1a] to-[#1a0a2e] text-white;
+  }
+
+  * {
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+@layer components {
+  /* Primary Button - Gradient */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#00e5ff] to-[#c850f0] text-white font-semibold text-sm rounded-lg border-none cursor-pointer;
+    @apply hover:opacity-90 hover:shadow-lg active:opacity-95;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  }
+
+  /* Secondary Button - Outlined Cyan */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-[#00e5ff] text-[#00e5ff] font-semibold text-sm rounded-lg cursor-pointer;
+    @apply hover:shadow-lg hover:border-opacity-100;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+  }
+
+  /* Danger Button - Orange */
+  .btn-danger {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#ff2d78] to-[#ff6600] text-white font-semibold text-sm rounded-lg border-none cursor-pointer;
+    @apply hover:opacity-90 hover:shadow-lg active:opacity-95;
+    box-shadow: 0 0 12px rgba(255, 45, 120, 0.2);
+  }
+
+  /* Card Style - Dark with Cyan Border */
+  .card {
+    @apply bg-[#0d1117] border border-[rgba(0,229,255,0.2)] rounded-2xl p-6;
+    @apply hover:border-[#00e5ff] hover:shadow-lg hover:shadow-[rgba(0,229,255,0.25)];
+    @apply transform hover:-translate-y-1;
+  }
+
+  /* Input Field - Dark with Cyan Border */
+  .input-field {
+    @apply w-full bg-[#0d1117] border border-[rgba(0,229,255,0.3)] rounded-lg px-4 py-3 text-white placeholder-[#8892a4];
+    @apply focus:outline-none focus:border-[#00e5ff] focus:ring-1 focus:ring-[rgba(0,229,255,0.2)];
+  }
+
+  /* Label - Muted text */
+  .label-text {
+    @apply block font-medium text-sm text-[#8892a4] mb-2;
+  }
+
+  /* Error Text - Pink */
+  .error-text {
+    @apply text-sm text-[#ff2d78] mt-1;
+  }
+
+  /* Success Text - Teal */
+  .success-text {
+    @apply text-sm text-[#00c9a7] mt-1;
+  }
+
+  /* Progress Bar */
+  .progress-bar {
+    @apply h-1.5 bg-[#1a1a2e] rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-[#00e5ff] to-[#ff2d78] rounded-full;
+  }
+}
