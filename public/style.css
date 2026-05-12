@@ -1,0 +1,417 @@
+@import url('https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap');
+
+:root {
+    color-scheme: dark;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --bg: #0a0a1a;
+    --bg-alt: #0d1117;
+    --panel: rgba(13, 17, 23, 0.96);
+    --border: rgba(0, 229, 255, 0.3);
+    --accent-cyan: #00e5ff;
+    --accent-purple: #c850f0;
+    --accent-pink: #ff2d78;
+    --accent-orange: #ff9900;
+    --accent-teal: #00c9a7;
+    --text-primary: #ffffff;
+    --text-muted: #8892a4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    background: radial-gradient(circle at top, rgba(0, 229, 255, 0.18), transparent 18%), radial-gradient(circle at 40% 30%, rgba(200, 80, 240, 0.12), transparent 20%), radial-gradient(circle at 50% 50%, rgba(255, 45, 120, 0.08), transparent 18%), linear-gradient(180deg, #0a0a1a 0%, #0d1117 40%, #111827 100%);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+body.quantum-body {
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+button, input, select, a {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app-shell {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 28px 16px 40px;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.page-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    background: rgba(13, 17, 23, 0.92);
+    box-shadow: 0 0 28px rgba(0, 229, 255, 0.08);
+}
+
+.neon-heading {
+    font-size: clamp(2rem, 3vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin: 0;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body-copy {
+    margin: 0;
+    color: var(--text-primary);
+    opacity: 0.92;
+    max-width: 720px;
+}
+
+.muted-text {
+    color: var(--text-muted);
+}
+
+.accent-text {
+    color: var(--accent-pink);
+    font-weight: 700;
+}
+
+.card-panel {
+    background: rgba(13, 17, 23, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+    transition: all 0.25s ease;
+}
+
+.card-panel:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.2);
+}
+
+.card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.quiz-card,
+.admin-loop-card,
+.question-card,
+.option-card,
+.history-card,
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.admin-loop-card {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.input-glow,
+.select-glow {
+    width: 100%;
+    min-height: 48px;
+    background: rgba(13, 17, 23, 0.95);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 12px;
+    color: var(--text-primary);
+    padding: 14px 18px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-glow:focus,
+.select-glow:focus,
+.option-form input:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 14px rgba(0, 229, 255, 0.2);
+}
+
+::placeholder {
+    color: var(--text-muted);
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.primary-button {
+    border: none;
+    padding: 14px 24px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    color: #fff;
+}
+
+.primary-button:hover {
+    opacity: 0.95;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.secondary-button {
+    border: 1px solid var(--accent-cyan);
+    background: transparent;
+    color: var(--accent-cyan);
+    padding: 12px 20px;
+}
+
+.secondary-button:hover {
+    background: rgba(0, 229, 255, 0.08);
+    box-shadow: 0 0 14px rgba(0, 229, 255, 0.18);
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.quiz-card h2,
+.history-card h2,
+.question-card h3,
+.option-card h3,
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.question-form,
+.option-form,
+.inline-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.question-form input,
+.option-form input {
+    flex: 1;
+}
+
+.question-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.options-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.option-button {
+    width: 100%;
+    text-align: left;
+    min-height: 64px;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    background: rgba(17, 24, 39, 0.95);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s ease;
+}
+
+.option-button:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.option-badge {
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 12px;
+    background: rgba(0, 229, 255, 0.12);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    color: var(--accent-cyan);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.result-panel {
+    text-align: center;
+}
+
+.result-score {
+    color: var(--accent-pink);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.history-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.empty-state {
+    padding: 24px;
+    text-align: center;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.checkbox-label input {
+    accent-color: var(--accent-cyan);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 18px 24px;
+    background: rgba(10, 10, 26, 0.9);
+    border-bottom: 1px solid rgba(0, 229, 255, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0;
+}
+
+header nav a,
+header nav button {
+    color: #ffffff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+header nav button:hover,
+header nav a:hover {
+    color: var(--accent-cyan);
+}
+
+.page-shell.welcome-shell,
+.page-shell.dashboard-shell,
+.page-shell.history-shell,
+.page-shell.quiz-shell,
+.page-shell.admin-shell {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.welcome-shell {
+    min-height: calc(100vh - 32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branding-panel {
+    background: rgba(13, 17, 23, 0.92);
+    border: 1px solid rgba(0, 229, 255, 0.22);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 26px rgba(0, 229, 255, 0.12);
+}
+
+.button-row a {
+    display: inline-flex;
+}
+
+@media (max-width: 800px) {
+    .app-shell,
+    .page-shell.welcome-shell {
+        padding: 20px 14px 32px;
+    }
+
+    .card-grid,
+    .history-grid,
+    .options-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-loop-card,
+    .question-form,
+    .option-form,
+    .button-row {
+        width: 100%;
+    }
+}

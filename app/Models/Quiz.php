@@ -18,4 +18,13 @@ class Quiz extends Model
         return $this->hasMany(QuizAttempt::class);
     }
 
+    protected static function booted()
+    {
+        static::deleting(function ($quiz) {
+            $quiz->questions()->each(function ($question) {
+                $question->options()->delete();
+                $question->delete();
+            });
+        });
+    }
 }

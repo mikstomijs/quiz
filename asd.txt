@@ -1,20 +1,4 @@
-roles user/admin
+Profile, register/login, welcome lapa centret pogas vaig
 
 
-pievienot atbildes jautajumiem
-
-input is correct ?
-input is correct ?
-input is correct ?
-input is correct ?
-
-ielikt visu array, ielikt datubaze
-
-
-
-
-
-
-
-
-
+Ja vari megini bug atrast pogas spamojot and shit

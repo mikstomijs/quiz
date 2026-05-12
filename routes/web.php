@@ -22,12 +22,11 @@ Route::get('/dashboard', function () {
     return view('dashboard', compact('quizzes'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/admin', function () {
-    abort_unless(auth()->check() && auth()->user()->isAdmin(), 403);
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/quiz/{quiz}/questions', [AdminController::class, 'questions']);
+Route::get('/admin/question/{question}/options', [AdminController::class, 'options']);
 
-    $quizzes = Quiz::with('questions')->get();
-    return view('admin', compact('quizzes'));
-});
+
 
 
 Route::get('/history', [QuizController::class, 'history'])->middleware('auth');
