@@ -25,7 +25,7 @@
 
                     <div class="options-grid">
                         @foreach($question->options->shuffle() as $option)
-                            <button class="option-button" onclick="nextQuestion({{ $index }}, {{ $option->id }})">
+                            <button class="option-button" type="button" data-question-index="{{ $index }}" data-option-id="{{ $option->id }}">
                                 <span class="option-badge">{{ strtoupper(substr('ABCD', $loop->index, 1)) }}</span>
                                 {{ $option->option_text }}
                             </button>
@@ -61,6 +61,14 @@
 
         setQuizProgress(0);
 
+        document.querySelectorAll('.option-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const index = Number(button.dataset.questionIndex);
+                const optionId = Number(button.dataset.optionId);
+                nextQuestion(index, optionId);
+            });
+        });
+
         function nextQuestion(index, optionId) {
             if (submitted) return;
             answers[index] = optionId;
@@ -81,7 +89,7 @@
             fetch('{{ url('/quiz/submit') }}', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': '{{ csrf_token() }}' },
-                body: JSON.stringify({ answers, quiz_id: {{ $quiz->id }} } })
+                body: JSON.stringify({ answers, quiz_id: {{ $quiz->id }}})
             })
             .then(r => r.json())
             .then(data => {

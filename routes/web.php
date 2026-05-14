@@ -26,17 +26,9 @@ Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/quiz/{quiz}/questions', [AdminController::class, 'questions']);
 Route::get('/admin/question/{question}/options', [AdminController::class, 'options']);
 
-
-
-
 Route::get('/history', [QuizController::class, 'history'])->middleware('auth');
 
 Route::post('/quiz/submit', [QuizController::class, 'submit'])->middleware('auth');
-
-
-
-
-
 
 Route::post('/admin', [AdminController::class, 'store']);
 

@@ -15,20 +15,6 @@
             </form>
         </section>
 
-        <section class="card-panel admin-card">
-            <h2 class="card-title">Quick Quiz Management</h2>
-            <div class="form-grid">
-                <div class="input-group">
-                    <label class="label-text">Choose quiz</label>
-                    <select id="quizSelect" class="select-glow">
-                        @foreach($quizzes as $quiz)
-                            <option value="{{ $quiz->id }}">{{ $quiz->title }}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <button class="secondary-button" type="button" onclick="window.location.href='/admin/quiz/'+document.getElementById('quizSelect').value+'/questions'">Manage questions</button>
-            </div>
-        </section>
 
         <section class="card-panel admin-card">
             <h2 class="card-title">Quiz Directory</h2>
@@ -39,6 +25,12 @@
                             <h3>{{ $quiz->title }}</h3>
                         </div>
                         <button class="secondary-button" type="button" onclick="window.location.href='/admin/quiz/{{ $quiz->id }}/questions'">Manage</button>
+                        <form method="POST" action="/admin">
+                        @csrf
+                        <input type="hidden" name="type" value="deleteQuiz">
+                        <input type="hidden" name="quiz_id" value="{{ $quiz->id }}">
+                        <button class="secondary-button" type="submit">Delete</button>
+                        </form>
                     </article>
                 @endforeach
             </div>
